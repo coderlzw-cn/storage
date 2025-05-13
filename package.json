@@ -1,0 +1,61 @@
+{
+    "name": "@coderlzw/storage",
+    "version": "0.0.1",
+    "description": "提供基于浏览器的storage、cookie的简易操作，支持storage过期、序列化、返序列化、加密、解密等功能",
+    "module": "dist/index.mjs",
+    "types": "dist/index.d.ts",
+    "author": "coderlzw",
+    "license": "MIT",
+    "homepage": "https://github.com/coderlzw-cn/storage#readme",
+    "scripts": {
+        "prepare": "husky",
+        "build": "tsup",
+        "lint": "eslint --fix src/**/*.ts",
+        "lint:check": "eslint src/**/*.ts",
+        "format": "prettier src/**/*.ts --write",
+        "format:check": "prettier src/**/*.ts --check",
+        "commit": "git-cz",
+        "release": "semantic-release",
+        "release:ci": "semantic-release --ci",
+        "lint-staged": "lint-staged"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/coderlzw-cn/websocket.git"
+    },
+    "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
+    },
+    "keywords": [
+        "cookie",
+        "localstorage",
+        "sessionstorage"
+    ],
+    "files": [
+        "dist"
+    ],
+    "dependencies": {
+        "crypto-js": "^4.2.0"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^19.8.1",
+        "@commitlint/config-conventional": "^19.8.1",
+        "@eslint/js": "^9.26.0",
+        "@semantic-release/changelog": "^6.0.3",
+        "@semantic-release/git": "^10.0.1",
+        "@types/crypto-js": "^4.2.2",
+        "commitizen": "^4.3.1",
+        "cz-customizable": "^7.4.0",
+        "eslint": "^9.26.0",
+        "eslint-config-prettier": "^10.1.5",
+        "globals": "^16.1.0",
+        "husky": "^9.1.7",
+        "lint-staged": "^16.0.0",
+        "prettier": "^3.5.3",
+        "semantic-release": "^24.2.3",
+        "tsup": "^8.4.0",
+        "typescript": "^5.8.3",
+        "typescript-eslint": "^8.32.0"
+    }
+}

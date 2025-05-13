@@ -1,0 +1,8 @@
+{
+  "path": "cz-customizable",
+  "config": {
+    "cz-customizable": {
+      "format": "{type}: {subject}"
+    }
+  }
+}

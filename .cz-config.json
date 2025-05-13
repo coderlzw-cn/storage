@@ -1,0 +1,52 @@
+{
+    "types": [
+        { "value": "feat", "name": "feat:     新增功能" },
+        { "value": "fix", "name": "fix:      修复 bug" },
+        { "value": "docs", "name": "docs:     文档更新" },
+        { "value": "style", "name": "style:    代码格式调整（不影响逻辑）" },
+        { "value": "refactor", "name": "refactor: 代码重构（不新增功能也不修复 bug）" },
+        { "value": "perf", "name": "perf:     性能优化" },
+        { "value": "test", "name": "test:     增加或修改测试" },
+        { "value": "chore", "name": "chore:    构建过程/依赖管理等维护任务" },
+        { "value": "revert", "name": "revert:   回滚到上一版本" },
+        { "value": "ci", "name": "ci:       CI/CD 相关配置更改" },
+        { "value": "build", "name": "build:    打包构建相关" },
+        { "value": "release", "name": "release:  发布新版本" },
+        { "value": "tag", "name": "tag:      创建版本标签" },
+        { "value": "security", "name": "security: 安全性更新" },
+        { "value": "debug", "name": "debug:    调试相关" },
+        { "value": "plugin", "name": "plugin:   插件相关改动" }
+    ],
+
+
+    "allowCustomScopes": true,
+    "usePreparedCommit": false,
+
+    "scopeOverrides": {
+        "fix": {
+            "choices": [
+                { "name": "merge", "description": "合并冲突" },
+                { "name": "style", "description": "样式问题" },
+                { "name": "e2eTest", "description": "端到端测试" },
+                { "name": "unitTest", "description": "单元测试" }
+            ]
+        }
+    },
+
+    "messages": {
+        "type": "选择你要提交的类型:",
+        "scope": "选择一个作用域 (可选):",
+        "customScope": "请输入自定义的作用域:",
+        "subject": "写一个简短的描述 (最多200个字符):\n",
+        "body": "提供更详细的描述 (可选)，用 | 换行:\n",
+        "breaking": "列出任何破坏性变更 (可选):\n",
+        "footer": "列出关闭的 issue 编号，如 #123, #456:\n",
+        "confirmCommit": "确认提交以上内容?"
+    },
+
+    "allowBreakingChanges": ["feat", "fix"],
+    "subjectLimit": 200,
+    "appendBranchNameToCommitMessage": false,
+    "upperCaseSubject": false,
+    "askForBreakingChangeFirst": false
+}
